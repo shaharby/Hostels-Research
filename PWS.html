@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<meta name=viewport content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.5">    
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
     html,
     body {
         min-height: 100%;
+        display: flex;
     }
 
     body,
@@ -72,7 +73,9 @@
         border-bottom: 1px solid #ccc;
         text-align: center;
         vertical-align: unset;
-        line-height: 18px;  
+        line-height: 18px;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid gray;
     }
 
     .additional-question th,
@@ -153,21 +156,15 @@
     }
 
     input:invalid { 
-        background: rgb(250, 226, 226) ;
+        background: rgb(250, 226, 226);
+
     }
 
     input:focus:invalid {
         box-shadow: none;
     }
 
-    @media (media="only screen and (max-width: 800px)") {
-        th,
-        td {
-            word-break: keep-all;
-        }
-    }
 </style>
-
 <head>
     <title>שאלון מאפייני התנהגות PWS</title>
 </head>
