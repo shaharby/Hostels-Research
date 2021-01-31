@@ -88,7 +88,7 @@
     .additional-question .first-col,
     .course-rate .first-col {
         width: 45%;
-        font-size: 14px;
+        font-weight: bold;
         text-align: right;
         word-break: keep-all;
         color: darkblue;
@@ -159,6 +159,17 @@
         box-shadow: none;
     }
 
+    @media (min-width: 550px) {
+        html 
+        {
+            font-size: 120%;
+        }
+
+        th,
+        td {
+            word-break: keep-all;
+        }
+    }
 </style>
 
 <head>
