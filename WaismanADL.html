@@ -104,16 +104,26 @@
         font-weight: bold;
     }
 
+    .RadioStyle {
+        display: inline-block;
+        border-left: none; 
+        border-bottom: none;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        width: 1.3em;
+    }
+
     .RadioQuestion {
+        display: inline;
         border-left: none; 
         border-bottom: none;
         text-align: right;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-size: 16px; 
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-right: 5px;
+        font-size: 16px;
         font-weight: bold;
         color: darkblue;
-        width: 0.2em;
     }
 
     .question-answer label {
@@ -179,11 +189,6 @@
     }
 
     @media (min-width: 550px) {
-        html 
-        {
-            font-size: 120%;
-        }
-
         th,
         td {
             word-break: keep-all;
@@ -221,19 +226,19 @@
                 <p class="question">תפקיד ממלא השאלון:</p>
                 <table>
                     <tr>
-                        <td class="RadioQuestion"><input type="radio" value="אם" name="entry.790830081" required></td>
+                        <td class="RadioStyle"><input type="radio" value="אם" name="entry.790830081" required></td>
                         <td class="RadioQuestion"> אם</td>
                     </tr>
                     <tr>
-                        <td class="RadioQuestion"><input type="radio" value="אב" name="entry.790830081" required></td>
+                        <td class="RadioStyle"><input type="radio" value="אב" name="entry.790830081" required></td>
                         <td class="RadioQuestion"> אב</td>
                     </tr>
                     <tr>
-                        <td class="RadioQuestion"><input type="radio" value="מטפל אחראי בהוסטל" name="entry.790830081" required></td>
-                        <td class="RadioQuestion">מטפל אחראי בהוסטל</td>
+                        <td class="RadioStyle"><input type="radio" value="מטפל אחראי בהוסטל" name="entry.790830081" required></td>
+                        <td class="RadioQuestion"> מטפל אחראי בהוסטל</td>
                     </tr>
                     <tr>
-                        <td class="RadioQuestion"><input type="radio" value="אחר" name="entry.790830081" required></td>
+                        <td class="RadioStyle"><input type="radio" value="אחר" name="entry.790830081" required></td>
                         <td class="RadioQuestion"> אחר</td>
                     </tr>
                 </table>
@@ -362,4 +367,5 @@
         </form>
     </div>
 </body>
+
 </html>
